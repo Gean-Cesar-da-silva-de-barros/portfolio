@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./imagens/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!-- Typed -->
+
+</head>
+
+<body class="">
+    <header class="bg-red-50">
+        <div class="container ">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h1>Portfólio</h1>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="#Início" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="#Projetos" class="nav-link">Projetos</a></li>
+                        <li class="nav-item"><a href="#SobreMim" class="nav-link"> Sobre mim</a></li>
+                        <li class="nav-item"><a href="#Contato" class="nav-link">Contato</a></li>
+
+                    </ul>
+                </div>
+                <button id="mudar-tema"><img src="./imagens/moon50black.png"></button>
+
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="#Início" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#Projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#SobreMim" class="nav-link">Sobre mim</a></li>
+                    <li class="nav-item"><a href="#Contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <a href="https://wa.link/we0afq" class="botao-wpp" target="_blank">
+            <img src="./imagens/whatsapblack50.png">
+        </a>
+
+        <section id="Início" class="principal">
+            <div class="container">
+                <div class="informPessoais">
+                    <h1>Gean Cesar</h1>
+                    <h2 id="MinhaProf">Desenvolvedor Web</h2>
+                    <p id="Meta"></p>
+                </div>
+                <div class="fotoPrincipal">
+                    <img src="./imagens/eubrancofundocinza.png" alt="Minha Imagem Principal" />
+                </div>
+            </div>
+        </section>
+
+        <section id="SobreMim" class="SobreMim">
+            <div class="container sobremim-container">
+                <h2>Sobre mim</h2>
+                <div class="sobremim-content">
+
+                    <div class="sobremim-div1">
+                        <p>
+                            Olá! Sou <span style="color: rgb(0, 0, 0); font-weight: bold;">Gean</span>, formado em
+                            Análise e
+                            Desenvolvimento de
+                            Sistemas, com foco em desenvolvimento web. Tenho experiência prática com
+                            <span style="color:rgb(0, 0, 0); font-weight: bold">HTML, CSS, JavaScript e
+                                Git/GitHub</span>,
+                            aplicando conceitos de
+                            design responsivo,
+                            boas práticas de código e funcionalidades interativas em meus projetos.
+                            <br><br>
+                            Este portfólio foi criado para ser um reflexo do meu aprendizado e evolução na programação.
+                            Cada
+                            projeto aqui apresentado foi desenvolvido para demonstrar minhas habilidades técnicas, meu
+                            cuidado com a experiência do usuário e meu interesse em construir aplicações bem
+                            estruturadas,
+                            performáticas e de fácil manutenção.
+                            <br><br>
+                            Sou autodidata, persistente e organizado, sempre em busca de novas formas de melhorar meus
+                            conhecimentos e práticas. Meu objetivo é iniciar minha carreira como <span
+                                style="color: rgb(0, 0, 0);font-weight: bold">Front-End, Analista de Suporte de TI,
+                                Desenvolvedor de Sistemas</span> ou em áreas
+                            correlatas,
+                            contribuindo para a
+                            criação de interfaces modernas e impactantes.
+                        </p>
+                    </div>
+
+                    <div class="video">
+                        <p class="video-text">Assista a uma demonstração complementar do meu trabalho:</p>
+                        <video src="videos/video1.mp4" controls autoplay muted width="500"></video>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        </div>
+
+
+        <section class="habilidades" data-aos="fade-up">
+            <div class="container">
+                <div class="container-habilidades">
+                    <h2 class="">Habilidades</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card javascript-section">
+                            <img src="imagens/js100.png" alt="Ícone JavaScript" />
+                            <p class="desc">Exploro JavaScript para adicionar interatividade e lógica às páginas,
+                                trabalhando com
+                                eventos
+                                e manipulação do DOM para criar comportamentos dinâmicos e melhorar a experiência do
+                                usuário
+                            </p>
+
+
+
+
+                        </div>
+
+                        <div class="skill-card html-section">
+                            <img src="./imagens/html100.png" alt="Ícone HTML" />
+                            <p class="desc">Estruturo páginas com HTML semântico para manter o conteúdo bem organizado,
+                                acessível e
+                                fácil
+                                de manter, garantindo uma base sólida para a interface</p>
+                        </div>
+
+                        <div class="skill-card css-section">
+                            <img src="imagens/css100.png" alt="Ícone CSS" />
+                            <p class="desc">Estilizo interfaces com CSS pensando em responsividade, hierarquia visual e
+                                consistência,
+                                ajustando layouts e detalhes para deixar o design limpo e agradável em diferentes telas
+                            </p>
+                        </div>
+                        <div class="skill-card tailwind-section">
+                            <img src="imagens/tailwind100.png" alt="Ícone Tailwind" />
+                            <p class="desc">Com Tailwind, construo interfaces responsivas com agilidade usando classes
+                                utilitárias para controlar layout, espaçamentos, tipografia e cores diretamente no HTML,
+                                mantendo consistência visual e facilitando ajustes rápidos no design sem depender de
+                                muito CSS personalizado
+                            </p>
+                        </div>
+
+                        <div class="skill-card github-section">
+                            <img src="./imagens/github100.png" alt="Ícone GitHub" />
+                            <p class="desc">Tenho utilizado o GitHub para versionar meus projetos com commits frequentes
+                                e mensagens
+                                claras, mantendo o repositório organizado e facilitando atualizações, testes e evolução
+                                do
+                                código ao longo do tempo</p>
+
+                        </div>
+
+                        <div class="skill-card git-section">
+                            <img src="./imagens/git100.png" alt="Ícone Git" />
+                            <p class="desc">Uso Git para versionar projetos com mais segurança, mantendo um histórico
+                                claro de
+                                mudanças
+                                com commits objetivos e organização por branches quando necessário</p>
+                        </div>
+
+                        <div class="skill-card figma-section">
+                            <img src="./imagens/figma100.png" alt="Ícone Figma" />
+                            <p class="desc">No Figma, estruturo a ideia antes do código, definindo layout, tipografia e
+                                cores, além
+                                de
+                                montar protótipos simples para visualizar o fluxo e manter consistência no design</p>
+                        </div>
+                        <div class="skill-card bootstrap-section">
+                            <img src="./imagens/bootstrap100.png" alt="Ícone Bootstrap" />
+                            <p class="desc">Com Bootstrap, acelero a construção de interfaces responsivas usando grid e
+                                componentes
+                                prontos, ajustando classes e detalhes visuais para deixar o resultado mais profissional
+                                e
+                                bem alinhado ao projeto</p>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+        <section id="Projetos" data-aos="fade-up" class="Projetos">
+            <div class="container">
+                <h2 class="">Projetos</h2>
+                <div class="ContainerProjetos">
+                    <div class="projeto1">
+
+                        <div class="projeto-card-img">
+                            <img alt="Imagensprojetos" src="./imagens/topburguer.PNG" width="300px">
+                        </div>
+
+                        <div class="projeto-info">
+
+                            <h3>Página Top Burguer </h3>
+                            <p>Site fictício de hamburgueria feito para treinar responsividade</p>
+                            <br>
+                            <a class="botao" href="https://github.com/Gean-Cesar-da-silva-de-barros/Projeto-Top-Burger"
+                                target="_blank" rel="noopener noreferrer">Código</a>
+                            <a class="botao" href="https://gean-cesar-da-silva-de-barros.github.io/Projeto-Top-Burger/"
+                                target="_blank" rel="noopener noreferrer">Demo </a>
+                        </div>
+
+
+
+                    </div>
+                    <div class="projeto2">
+                        <div class="projeto-card-img">
+                            <img alt="Imagensprojetos" src="./imagens/mecanica.PNG" width="00px">
+                        </div>
+                        <div class="projeto-info">
+                            <h3>Mecânica automotiva</h3>
+                            <p>Página de mecanica automotiva e ar condicionado feita para um cliente </p>
+                            <br>
+                            <a class="botao"
+                                href="https://github.com/Gean-Cesar-da-silva-de-barros/Projeto-Mec-nica-jonatha"
+                                target="_blank" rel="noopener noreferrer">Código</a>
+                            <a class="botao"
+                                href="https://gean-cesar-da-silva-de-barros.github.io/Projeto-Mec-nica-jonatha/"
+                                target="_blank" rel="noopener noreferrer">Demo</a>
+                        </div>
+
+                    </div>
+                    <div class="projeto3">
+                        <div class="projeto-card-img">
+                            <img src="./imagens/printstarbucks.PNG" width="300px">
+                        </div>
+                        <div class="projeto-info">
+                            <h3>Página Starbucks</h3>
+                            <p>Projeto de Landing Page Starbucks desenvolvido com HTML e CSS.</p>
+                            <br>
+                            <a class="botao" href="https://github.com/Gean-Cesar-da-silva-de-barros/Projeto-Starbucks"
+                                target="_blank" rel="noopener noreferrer">Código</a>
+                            <a class="botao" href="https://gean-cesar-da-silva-de-barros.github.io/Projeto-Starbucks/"
+                                target="_blank" rel="noopener noreferrer">Demo</a>
+                        </div>
+
+                    </div>
+                    <div class="projeto4">
+                        <div class="projeto-card-img">
+                            <img src="./imagens/awax.PNG" width="300px">
+                        </div>
+                        <div class="projeto-info">
+                            <h3>Página Awax</h3>
+                            <p>Leading Page Awax do curso da B7WEB, feito com HTML/CSS</p>
+                            <br>
+                            <a class="botao" href="https://github.com/Gean-Cesar-da-silva-de-barros/Projeto-Awax"
+                                target="_blank" rel="noopener noreferrer">Código</a>
+                            <a class="botao" href="https://gean-cesar-da-silva-de-barros.github.io/Projeto-Awax/"
+                                target="_blank" rel="noopener noreferrer">Demo</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="projeto5">
+                        <div class="projeto-card-img">
+                            <img src="./imagens/George orweell grande preto e branco.jpeg" width="300px">
+                        </div>
+                        <div class="projeto-info">
+                            <h3>Tributo George Orwell</h3>
+                            <p>Simples Leading page feito com HTML/CSS</p>
+                            <br>
+                            <a class="botao"
+                                href="https://github.com/Gean-Cesar-da-silva-de-barros/Tributo-George-Orwel"
+                                target="_blank" rel="noopener noreferrer">Código</a>
+                            <a class="botao"
+                                href="https://gean-cesar-da-silva-de-barros.github.io/Tributo-George-Orwel/"
+                                target="_blank" rel="noopener noreferrer">Demo</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="projeto6">
+                        <div class="projeto-card-img">
+                            <img src="./imagens/clonegoogle.PNG" width="300px">
+                        </div>
+                        <div class="projeto-info">
+                            <h3>Clone Google</h3>
+                            <p>Simples Clone Google feito com HTML/CSS</p>
+                            <br>
+                            <a class="botao" href="https://github.com/Gean-Cesar-da-silva-de-barros/Clone-Google"
+                                target="_blank" rel="noopener noreferrer">Código</a>
+                            <a class="botao" href="https://gean-cesar-da-silva-de-barros.github.io/Clone-Google/"
+                                target="_blank" rel="noopener noreferrer">Demo</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+    </main>
+    <div class="sugestao">
+
+        <div class="paragrafo">
+            <p>
+            <h3>Gostou? Você acha que preciso melhor em algo? Me deixa sua sugestão!?</h3>
+            </p>
+        </div>
+        <div class="sugestao-cliente">
+            <form action="mailto:gean021216@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="Sugestão" class="dicas" placeholder="Dicas construtivas" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <section class="ContainerContatoRapido">
+
+        <h2>Minhas redes</h2>
+        <div id="Contato" class="redes">
+            <div class="github">
+                <a href="https://github.com/Gean-Cesar-da-silva-de-barros" target="_blank" rel="noopener noreferrer">
+                    <img src="./imagens/githubclack50.png" id="github" alt="Ícone github" />
+                </a>
+            </div>
+            <div class="instagram">
+                <a href="https://www.instagram.com/gean_dev/" target="_blank" rel="noopener noreferrer">
+                    <img src="./imagens/instagramblack50.png" id="imginstagram" alt="Ícone instagram" />
+                </a>
+            </div>
+            <div class="email">
+                <a href="mailto:gean021216@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./imagens/gmailblack50.png" id="imgGmail" alt="Ícone Email" />
+                </a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/gean-c%C3%A9sar-76b35422a/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./imagens/linkedinblack50.png" id="imgLinkedin" alt="Ícone Linkedin" />
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Gean Cesar. Todos os direitos reservados.</p>
+
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
