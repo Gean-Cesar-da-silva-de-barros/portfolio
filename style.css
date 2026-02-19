@@ -156,7 +156,7 @@ header {
   margin-top: 20px;
   border-radius: 30%;
   max-width: 300px;
-  box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 0 20px rgba(3, 155, 160, 0.3);
   border: 4px solid #868686;
   height: auto;
   display: block;
@@ -308,7 +308,7 @@ main {
   padding: 5px;
   border: none;
   border-radius: 10px;
-  background-color: #686868;
+  background-color: #00051d;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -317,8 +317,7 @@ main {
 }
 
 .botao:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color: #0099cc;
   text-shadow: 0px 1px 3px #000000;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
   transform: scale(1.03);
@@ -381,32 +380,32 @@ main {
 
 .projeto1:hover {
   transform: scale(1.04);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 4px 12px #000308;
 }
 
 .projeto2:hover {
   transform: scale(1.04);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 4px 12px #000308;
 }
 
 .projeto3:hover {
   transform: scale(1.04);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 4px 12px #000308;
 }
 
 .projeto4:hover {
   transform: scale(1.04);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 4px 12px #000308;
 }
 
 .projeto5:hover {
   transform: scale(1.04);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 4px 12px #000308;
 }
 
 .projeto6:hover {
   transform: scale(1.04);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 4px 12px #000308;
 }
 
 /* Contato */
@@ -551,7 +550,7 @@ footer {
 
 /* Estilos/classe para o modo escuro */
 .dark-mode {
-  background-color: #121212;
+  background-color: #00051d;
   color: #ffffff;
 
   .principal p {
@@ -565,6 +564,10 @@ footer {
 
   .logo h1 {
     color: #ffffff;
+  }
+  .fotoPrincipal img {
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
   }
 
   .nav-link {
@@ -621,7 +624,7 @@ footer {
   .projeto4:hover,
   .projeto5:hover,
   .projeto6:hover {
-    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.432);
+    box-shadow: 0px 4px 12px rgba(1, 219, 235, 0.432);
   }
 
   .projeto-info h3 {
@@ -634,6 +637,10 @@ footer {
   }
   .btnSubir {
     color: white;
+  }
+  .skill-card {
+    background-color: #303030;
+    border: 1px solid #ffffff;
   }
 }
 
@@ -662,8 +669,7 @@ footer {
   width: 100%;
   padding: 16px;
   border-radius: 14px;
-  background-color: transparent;
-
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
 }
 
