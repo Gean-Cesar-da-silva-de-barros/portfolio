@@ -302,6 +302,46 @@ main {
   padding-bottom: 30px;
 }
 
+.carrosel {
+  margin: 100px auto;
+  width: 90%;
+  display: flex;
+  overflow-x: auto; /*permite rolagem horizontal*/
+}
+.group-item-p {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.carrosel::-webkit-scrollbar {
+  display: none; /*esconde a barra de rolagem*/
+}
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 13s infinite linear;
+  padding-right: 1em;
+}
+.card {
+  flex: 0 0 5em;
+  height: 5em;
+  padding: 1em;
+  border: 1px solid #00051d;
+  font-size: 3rem;
+  border-radius: 0.2em;
+  text-align: center;
+  align-content: center;
+}
+@keyframes spin {
+  from {
+    transform: translatex(0);
+  }
+  to {
+    transform: translatex(-100%);
+  }
+}
+
 /* Botão */
 .botao {
   padding: 5px;
@@ -454,7 +494,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 200px;
+  width: 100%;
   background-color: #ffffff;
 }
 
@@ -608,6 +648,9 @@ footer {
   .sugestao h3 {
     color: #d3d3d3;
   }
+  .card {
+    border: 1px solid #6495ed;
+  }
 
   .ContainerContatoRapido {
     background-color: #303030;
@@ -667,18 +710,25 @@ footer {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
   width: 100%;
+  padding: 20px 0;
 }
 
 .skill-card {
   border: 1px solid #000000;
-  width: 100%;
+  width: 150px;
+  height: 150px;
   padding: 16px;
   border-radius: 14px;
-  background-color: rgba(255, 255, 255, 0.8);
+  margin: 10px;
+
   backdrop-filter: blur(10px);
 }
 
@@ -698,86 +748,6 @@ footer {
 }
 #topo {
   scroll-margin-top: 0;
-}
-
-@media (max-width: 480px) {
-  header .logo {
-    color: brown;
-    padding-left: 20px;
-  }
-
-  .principal > .container {
-    flex-direction: column;
-    padding-top: 80px;
-
-    h1 {
-      font-size: 35px;
-    }
-
-    h2 {
-      font-size: 18px;
-    }
-
-    img {
-      width: 200px;
-      margin-bottom: 50px;
-    }
-  }
-
-  .informPessoais p {
-    font-size: 12px;
-    color: #aaaaaa;
-  }
-
-  .SobreMim {
-    padding-top: 5px;
-  }
-
-  .sobremim-div1 {
-    p {
-      font-size: 14px;
-      margin-top: -15px;
-    }
-  }
-
-  .video {
-    p {
-      font-size: 14px;
-    }
-  }
-
-  .sobremim-content {
-    flex-direction: column;
-  }
-
-  .paragrafo h3 {
-    font-size: 16px;
-  }
-
-  .sugestao {
-    height: auto;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .sugestao-cliente button {
-    width: 100%;
-  }
-
-  .dicas {
-    width: 100%;
-  }
-
-  .container.sobremim-container {
-    h2 {
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 10px;
-    }
-  }
 }
 
 /* Menu Hamburguer */
@@ -820,5 +790,99 @@ footer {
 
   .open {
     display: block;
+  }
+}
+@media (max-width: 480px) {
+  header .logo {
+    color: brown;
+    padding-left: 20px;
+  }
+  .botao-wpp {
+    display: none;
+  }
+
+  .principal > .container {
+    flex-direction: column;
+    padding-top: 80px;
+
+    h1 {
+      font-size: 35px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    img {
+      width: 200px;
+      margin-bottom: 50px;
+    }
+  }
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .informPessoais p {
+    font-size: 12px;
+    color: #aaaaaa;
+  }
+
+  .SobreMim {
+    padding-top: 5px;
+  }
+
+  .sobremim-div1 {
+    p {
+      font-size: 14px;
+      margin-top: -15px;
+    }
+  }
+
+  .video {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .sobremim-content {
+    flex-direction: column;
+  }
+
+  .paragrafo h3 {
+    font-size: 16px;
+  }
+
+  .sugestao {
+    width: 100vw;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sugestao-cliente button {
+    width: 100%;
+  }
+
+  .dicas {
+    width: 100%;
+  }
+  .ContainerProjetos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container.sobremim-container {
+    h2 {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
+    }
+  }
+  .logo h1 {
+    font-size: 24px;
   }
 }
