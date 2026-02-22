@@ -96,3 +96,6 @@ function trocarImagemGitHub() {
 }
 
 function mudarFotoPrincipal() {}
+
+
+
