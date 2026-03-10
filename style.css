@@ -856,6 +856,12 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  .projeto-card {
+    width: 90%;
+  }
+  .redes {
+    gap: 20px;
+  }
 
   .container.sobremim-container {
     h2 {
