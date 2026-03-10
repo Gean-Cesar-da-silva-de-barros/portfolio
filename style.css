@@ -348,7 +348,7 @@ main {
   border: none;
   border-radius: 10px;
   background-color: #00051d;
-  color: white;
+  color: rgb(138, 138, 138);
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
@@ -356,10 +356,11 @@ main {
 }
 
 .botao:hover {
-  background-color: #0099cc;
+  background-color: #00bfff;
   text-shadow: 0px 1px 3px #000000;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
   transform: scale(1.03);
+  color: #ffffff;
 }
 
 .span-lateral-concluido {
@@ -373,36 +374,39 @@ main {
 }
 
 /* Projetos com imagem de fundo */
-.projeto1,
-.projeto2,
-.projeto3,
-.projeto4,
-.projeto5,
-.projeto6 {
+.projeto-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   color: rgb(0, 0, 0);
   width: 380px;
-  height: 350px;
+  height: auto;
   padding: 10px;
-
   background-color: rgb(255, 255, 255);
-
   border-radius: 10px;
+}
+.projeto-card:hover {
+  border: 1px solid #0099cc;
+}
+.projeto-card-img {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
 }
 
 .projeto-card-img img {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  transition: transform 0.4s ease;
+}
+
+.projeto-card:hover .projeto-card-img img {
+  transform: scale(1.08);
 }
 
 .projeto-info {
   text-align: center;
-  background-color: rgb(255, 255, 255);
 
   border-radius: 5px;
 
@@ -417,35 +421,6 @@ main {
   padding: 10px 0 5px 0;
 }
 
-.projeto1:hover {
-  transform: scale(1.04);
-  box-shadow: 0px 4px 12px #000308;
-}
-
-.projeto2:hover {
-  transform: scale(1.04);
-  box-shadow: 0px 4px 12px #000308;
-}
-
-.projeto3:hover {
-  transform: scale(1.04);
-  box-shadow: 0px 4px 12px #000308;
-}
-
-.projeto4:hover {
-  transform: scale(1.04);
-  box-shadow: 0px 4px 12px #000308;
-}
-
-.projeto5:hover {
-  transform: scale(1.04);
-  box-shadow: 0px 4px 12px #000308;
-}
-
-.projeto6:hover {
-  transform: scale(1.04);
-  box-shadow: 0px 4px 12px #000308;
-}
 .destaque {
   color: #000000;
   font-weight: bold;
@@ -588,6 +563,33 @@ footer {
 
   animation: pulseWpp 2.2s infinite;
 }
+.tecnologias {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.tecnologias span {
+  background: #e5e5e5;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.tecnologias span:hover {
+  background: #00bbff63;
+  transition: 0.3s;
+}
+.botao-breve {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #ccc;
+  color: #555;
+  font-weight: bold;
+  cursor: not-allowed;
+}
 
 /* Estilos/classe para o modo escuro */
 .dark-mode {
@@ -652,25 +654,11 @@ footer {
     color: #d3d3d3;
   }
 
-  .projeto-info {
+  .projeto-card {
     background-color: #303030;
   }
 
-  .projeto1,
-  .projeto2,
-  .projeto3,
-  .projeto4,
-  .projeto5,
-  .projeto6 {
-    background-color: #303030;
-  }
-
-  .projeto1:hover,
-  .projeto2:hover,
-  .projeto3:hover,
-  .projeto4:hover,
-  .projeto5:hover,
-  .projeto6:hover {
+  .projeto-card:hover {
     box-shadow: 0px 4px 12px rgba(1, 219, 235, 0.432);
   }
 
@@ -787,6 +775,7 @@ footer {
     display: block;
   }
 }
+
 @media (max-width: 480px) {
   header .logo {
     color: brown;
