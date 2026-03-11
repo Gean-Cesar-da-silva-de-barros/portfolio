@@ -6,6 +6,10 @@
     <link rel="icon" href="./imagens/icon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfólio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -59,11 +63,11 @@
         <section id="Início" class="principal">
             <div class="container">
                 <div class="informPessoais">
-                    <h1>Gean Cesar</h1>
+                    <h1 class="animate__animated animate__bounce">Gean Cesar</h1>
                     <h2 id="MinhaProf">Desenvolvedor Web</h2>
                     <p id="Meta"></p>
                 </div>
-                <div class="fotoPrincipal">
+                <div id="card2" class="fotoPrincipal" onclick="fliparProjeto('card2')"  data-aos="fade-left" data-aos-duration="1000">
                     <img src="./imagens/eubrancofundocinza.png" alt="Minha Imagem Principal" />
                 </div>
             </div>
@@ -101,7 +105,7 @@
         </section>
         </div>
     
-        <section class="habilidades" data-aos="fade-up">
+        <section class="habilidades" data-aos="fade-up"data-aos-duration="3000">
             <div class="container">
                 <div class="container-habilidades">
                     <h2 class="">Habilidades</h2>
@@ -144,9 +148,9 @@
                 </div>
             </div>
         </section>
-        <section id="Projetos" data-aos="fade-up" class="Projetos">
+        <section id="Projetos" data-aos="fade-in"class="Projetos">
             <div class="container">
-                <h2 class="">Projetos</h2>
+                <h2 class="animate__animated animate__bounce">Projetos</h2>
                 <div class="ContainerProjetos">
                     <div class="projeto-card">
                         <div class="projeto-card-img">
@@ -271,9 +275,9 @@
                         </div>
                     </div>
 
-                    <div class="projeto-card">
-                        <div class="projeto-card-img">
-                            <img src="./imagens/contrucaoPortfli0o.png" width="300px">
+                    <div class="projeto-card animate__animated">
+                        <div id="card1"  onclick="fliparProjeto('card1')"  class="projeto-card-img" >
+                            <img  src="./imagens/contrucaoPortfli0o.png" width="300px">
                         </div>
                         <div class="projeto-info">
                             <h3>Novo portfólio</h3>
@@ -284,7 +288,7 @@
                                 <span>Javascript</span>                            
                             </div>
                             <br>
-                           <button class="botao-breve">Em breve</button>
+                           <button class="botao-breve" >Em breve</button>
                         </div>
                     </div>
                 </div>
@@ -295,7 +299,7 @@
     <section class="sugestao">
         <div class="paragrafo">
             <p>
-           <h3>Vamos construir algo juntos? Entre em contato — estou aberto a novos desafios em front-end.</h3>
+           <h3 data-aos="fade-right">Vamos construir algo juntos? Entre em contato — estou aberto a novos desafios em front-end.</h3>
             </p>
         </div>
         <div class="sugestao-cliente">
@@ -307,7 +311,7 @@
     </section>
     <section class="ContainerContatoRapido">
 
-        <h2>Minhas redes</h2>
+        <h2 class="" >Minhas redes</h2>
         <div id="Contato" class="redes">
             <div class="github">
                 <a href="https://github.com/Gean-Cesar-da-silva-de-barros" target="_blank" rel="noopener noreferrer">
