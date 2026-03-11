@@ -97,5 +97,10 @@ function trocarImagemGitHub() {
 
 function mudarFotoPrincipal() {}
 
-
-
+function fliparProjeto(id) {
+  let card = document.getElementById(id);
+  card.classList.add("animate__animated", "animate__shakeX");
+  setTimeout(() => {
+    card.classList.remove("animate__animated", "animate__shakeX");
+  }, 800);
+}
