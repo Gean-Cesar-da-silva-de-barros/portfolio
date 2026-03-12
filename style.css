@@ -475,10 +475,19 @@ main {
   flex-direction: column;
   width: 100%;
   background-color: #ffffff;
+  padding: 20px;
+  gap: 20px;
 }
 
 .sugestao img {
   background-color: #00bbff;
+}
+#buttonEmail:hover {
+  background-color: #00bfff;
+  text-shadow: 0px 1px 3px #000000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  color: #ffffff;
 }
 
 .sugestao-cliente button {
@@ -490,11 +499,6 @@ main {
   border-radius: 10px;
   color: #000;
   background: #b9b9b9;
-}
-
-.sugestao-cliente button:hover {
-  background-color: #0099cc;
-  color: floralwhite;
 }
 
 .sugestao-cliente input {
@@ -593,8 +597,6 @@ footer {
   color: #555;
   font-weight: bold;
   cursor: no-drop;
-}
-#fotoPrincipal {
 }
 
 /* Estilos/classe para o modo escuro */
