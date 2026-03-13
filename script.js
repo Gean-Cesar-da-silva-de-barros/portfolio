@@ -104,3 +104,18 @@ function fliparProjeto(id) {
     card.classList.remove("animate__animated", "animate__shakeX");
   }, 800);
 }
+
+//efeito para o header ficar mais escuro e com borda quando rolar a página
+window.addEventListener("scroll", function () {
+  let header = document.querySelector("#header");
+  let myname = document.querySelector("#myname");
+
+  if (window.scrollY > 300) {
+    header.classList.add("rolagem");
+
+    myname.textContent = "Gean Cesar";
+  } else {
+    header.classList.remove("rolagem");
+    myname.textContent = "Portfólio";
+  }
+});
