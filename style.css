@@ -757,9 +757,16 @@ footer {
 /* Menu Hamburguer */
 @media screen and (max-width: 730px) {
   .nav-bar {
-    padding: 1.5rem 4rem;
   }
-
+  .principal h1 {
+    font-size: 45px;
+    align-items: center;
+    justify-content: center;
+  }
+  .fotoPrincipal img {
+    width: 200px;
+    margin-top: 0;
+  }
   .nav-item {
     display: none;
   }
@@ -795,24 +802,56 @@ footer {
   .open {
     display: block;
   }
+  header {
+    background: #ccc;
+  }
+  .mobile-menu-icon button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding-top: 5px;
+  }
 }
 
 @media (max-width: 480px) {
   header .logo {
     color: brown;
-    padding-left: 20px;
+  }
+  header {
+    padding: 20px 4%;
+    background: #ccc;
   }
   .botao-wpp {
-    display: none;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin-right: 20px;
   }
-
+  .btnSubir {
+    right: 80px;
+  }
+  .nav-bar {
+  }
+  .mobile-menu-icon button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding-top: 5px;
+  }
+  .principal h1 {
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo h1 {
+    font-size: 24px;
+    padding-right: 1.5rem;
+  }
   .principal > .container {
     flex-direction: column;
     padding-top: 80px;
-
-    h1 {
-      font-size: 35px;
-    }
 
     h2 {
       font-size: 18px;
@@ -892,8 +931,5 @@ footer {
       align-items: center;
       padding-top: 10px;
     }
-  }
-  .logo h1 {
-    font-size: 24px;
   }
 }
