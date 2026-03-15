@@ -756,8 +756,6 @@ footer {
 
 /* Menu Hamburguer */
 @media screen and (max-width: 730px) {
-  .nav-bar {
-  }
   .principal h1 {
     font-size: 45px;
     align-items: center;
@@ -831,8 +829,7 @@ footer {
   .btnSubir {
     right: 80px;
   }
-  .nav-bar {
-  }
+
   .mobile-menu-icon button {
     color: white;
     border: none;
