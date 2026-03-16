@@ -21,6 +21,9 @@ html {
   font-family: "Montserrat", sans-serif;
   transition: all ease-in-out 0.2s;
 
+  scrollbar-width: thin;
+  scrollbar-color: #f8f8f8 #111827;
+
   [data-aos] {
     transition: all 1.5s ease;
   }
