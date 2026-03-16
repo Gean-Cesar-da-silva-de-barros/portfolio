@@ -26,4 +26,4 @@ Este portfólio representa minha evolução na área de tecnologia e meu comprom
 
 ## 🌐 Acesse o projeto
 
-🔗 [Visualizar Portfólio Online]((https://www.geancesar.io/))
+🔗 [Visualizar Portfólio Online](https://www.geancesar.io/)
