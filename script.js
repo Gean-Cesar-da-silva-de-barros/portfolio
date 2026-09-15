@@ -1,3 +1,13 @@
+
+  const buttonCurriculo = document.getElementById("buttonCurriculo");
+buttonCurriculo.addEventListener('click', function () {
+  const link = document.createElement('a');
+  link.href = './curriculo.pdf';
+  link.download = 'portfolio/Gean-Cesar-Curriculo.pdf'
+  link.click();
+})
+
+
 var typed = new Typed("#Meta", {
   strings: ["Criando soluções web que unem inovação, design e performance."], // texto
   typeSpeed: 20, // velocidade digitando
@@ -101,7 +111,7 @@ let fotoPrincipalImg = document.querySelector(".fotoPrincipal img");
 let mudarImg = document.querySelector(".mudar-img"); //pega o botão de mudança de imagem
 mudarImg.addEventListener("click", () => {
   if (fotoPrincipalImg.src.includes("fotoPrincipalBlack.jpg")) {
-    fotoPrincipalImg.src = "./imagens/fotoPrincipalWhite.png";
+    fotoPrincipalImg.src = "./imagens/eucs1.jpg";
   } else {
     fotoPrincipalImg.src = "./imagens/fotoPrincipalBlack.jpg";
   }

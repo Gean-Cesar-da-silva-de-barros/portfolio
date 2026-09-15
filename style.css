@@ -79,6 +79,23 @@ header.rolagem {
   padding: 10px 4%;
   transition: 0.5s;
 }
+.curriculo{
+  display: flex;
+  align-items: center;
+ 
+  
+  
+}
+#buttonCurriculo{
+  display:flex;
+  margin: auto;
+  font-size: 18px;
+  background-color: #0099cc00;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px;
+  
+}
 
 #myname {
   transition: 0.5s;
@@ -638,6 +655,10 @@ footer {
   .principal p {
     color: #d3d3d3;
   }
+  #buttonCurriculo{
+  color: #fffdfd;
+  
+}
 
   /* abaixo são do header*/
   header {
