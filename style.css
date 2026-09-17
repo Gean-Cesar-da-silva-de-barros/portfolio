@@ -79,21 +79,31 @@ header.rolagem {
   padding: 10px 4%;
   transition: 0.5s;
 }
-.curriculo{
+  .curriculo{
   display: flex;
   align-items: center;
- 
-  
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+#buttonCurriculo{
+  font-size: 12px;
+
+}
+.curriculo{
+  display: flex;
+  align-items: center; 
   
 }
 #buttonCurriculo{
-  display:flex;
+  display:block;
   margin: auto;
   font-size: 18px;
-  background-color: #0099cc00;
   cursor: pointer;
-  border-radius: 20px;
   padding: 10px;
+  border: none;
+  background-color: #CCCCCC;
   
 }
 
@@ -544,6 +554,7 @@ main {
   cursor: pointer;
   height: 50px;
   width: 150px;
+  margin-top: 5px;
   border-radius: 10px;
   color: #000;
   background: #b9b9b9;
@@ -657,6 +668,7 @@ footer {
   }
   #buttonCurriculo{
   color: #fffdfd;
+  background-color: #00051d;
   
 }
 
@@ -865,6 +877,18 @@ footer {
     padding: 20px 4%;
     background: #ccc;
   }
+  .curriculo{
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+#buttonCurriculo{
+  font-size: 12px;
+  border: none;
+}
   .botao-wpp {
     width: 24px;
     height: auto;
@@ -950,11 +974,16 @@ footer {
     padding: 20px;
     align-items: center;
     text-align: center;
+    background-color: #2ec462;
   }
 
   .sugestao-cliente button {
     width: 100%;
+    background-color: #0099cc;
+    color: white;
+    
   }
+
 
   .dicas {
     width: 100%;
