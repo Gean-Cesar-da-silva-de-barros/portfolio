@@ -79,32 +79,45 @@ header.rolagem {
   padding: 10px 4%;
   transition: 0.5s;
 }
-  .curriculo{
-  display: flex;
-  align-items: center;
-  border: 1px solid rgb(138, 138, 138);
-  border-radius: 10px;
-  margin-top: 0;
-  margin-bottom: 30px;
+.curriculo {
+    display: flex; /* Coloca os elementos lado a lado */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    width: fit-content; /* Ocupa somente o tamanho do conteúdo */
+    border: 1px solid rgb(138, 138, 138); /* Cria a borda */
+    border-radius: 10px; /* Arredonda os cantos */
+    margin-bottom: 30px; /* Espaço abaixo do botão */
+    overflow: hidden; /* Esconde o fundo que sair dos limites */
+    position: relative; /* Serve de referência para o ::before */
 }
-#buttonCurriculo{
-  font-size: 12px;
-
+.curriculo::before {
+    content: ""; /* Cria o elemento ::before */
+    position: absolute; /* Posiciona o fundo sobre o container */
+    inset: 0; /* Ocupa toda a área do .curriculo */
+    background: #6495ed; /* Cor do fundo animado */
+    transform: translateX(-100%); /* Começa totalmente à esquerda */
+    transition: transform 0.4s ease; /* Deixa o movimento suave */
+    z-index: 0; /* Coloca o fundo atrás do conteúdo */
 }
-.curriculo{
-  display: flex;
-  align-items: center; 
-  
+.curriculo:hover::before {
+    transform: translateX(0); /* Move o fundo para a posição normal */
 }
-#buttonCurriculo{
-  display:block;
-  margin: auto;
-  font-size: 18px;
-  cursor: pointer;
-  padding: 10px;
-  border: none;
-  background-color: #CCCCCC;
-  
+.curriculo > * {
+   /* >Esse símbolo significa:"filhos diretos-elementos que estão imediatamente dentro de .curriculo" e o asterisco *:qualquer elemento */
+  position: relative;
+    z-index: 1;
+}
+.curriculo i {
+    position: relative; /* Permite controlar a posição do ícone */
+    z-index: 1; /* Mantém o ícone acima do fundo */
+}
+#buttonCurriculo {
+    position: relative; /* Permite controlar a posição do botão */
+    z-index: 1; /* Mantém o texto acima do fundo */
+    font-size: 18px; /* Tamanho do texto */
+    cursor: pointer; /* Mostra a mãozinha do mouse */
+    padding: 10px; /* Espaço interno do botão */
+    border: none; /* Remove a borda padrão */
+    background: transparent; /* Deixa o fundo transparente */
 }
 
 #myname {
@@ -668,7 +681,7 @@ footer {
   }
   #buttonCurriculo{
   color: #fffdfd;
-  background-color: #00051d;
+  
   
 }
 
@@ -974,7 +987,7 @@ footer {
     padding: 20px;
     align-items: center;
     text-align: center;
-    background-color: #2ec462;
+
   }
 
   .sugestao-cliente button {
