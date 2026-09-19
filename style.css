@@ -101,6 +101,28 @@ header.rolagem {
 .curriculo:hover::before {
     transform: translateX(0); /* Move o fundo para a posição normal */
 }
+.arrow {
+    display: flex;
+   
+}
+
+.arrow-download {
+    display: none;
+    
+}
+
+.curriculo:hover .arrow-normal {
+    display: none; /*Quando o mouse passa por cima do elemento com a calsse .curriculo...
+    O CSS procura o elemento .arrow-normal que está lá dentro e o esconde (display: none;).*/
+}
+
+.curriculo:hover .arrow-download {
+    display: block;
+    
+    
+    /*Ao mesmo tempo, ele procura o elemento .arrow-download (que provavelmente estava escondido antes) e o mostra (display: block;).*/
+}
+
 .curriculo > * {
    /* >Esse símbolo significa:"filhos diretos-elementos que estão imediatamente dentro de .curriculo" e o asterisco *:qualquer elemento */
   position: relative;
@@ -218,7 +240,7 @@ header.rolagem {
   border-radius: 50%;
   max-width: 300px;
   box-shadow: 0 0 20px rgba(3, 155, 160, 0.3);
-  border: 4px solid #868686;
+  border: 1px solid #868686;
   display: block;
   animation: efeitFot 5s ease-in-out infinite;
   cursor: pointer;
