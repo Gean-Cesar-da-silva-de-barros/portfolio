@@ -604,6 +604,8 @@ main {
 .paragrafo h3 {
   color: #000000;
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .dicas {
