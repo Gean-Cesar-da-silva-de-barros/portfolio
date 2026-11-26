@@ -13,6 +13,28 @@ html {
     transform: translateY(-20px);
   }
 }
+@keyframes pulsar-status { /* keyframe para status disponibilidade me verde*/
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 10px #22c55e;
+    }
+
+    50% {
+        opacity: 0.4;
+        box-shadow: 0 0 2px #22c55e;
+    }
+}
+/*body:not(.dark): aplica as regras quando o body não possui a classe dark.*/
+body:not(.dark) .status-disponibilidade {
+    color: #15803d;
+    background: rgba(34, 197, 94, 0.12);
+    border-color: rgba(21, 128, 61, 0.3);
+}
+/*body:not(.dark): aplica as regras quando o body não possui a classe dark.*/
+body:not(.dark) .status-ponto {
+    background: #16a34a;
+    box-shadow: 0 0 10px rgba(22, 163, 74, 0.6);
+}
 
 * {
   box-sizing: border-box;
@@ -150,6 +172,34 @@ header.rolagem {
 #myname {
   transition: 0.5s;
 }
+.status-disponibilidade {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 8px 15px;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    border-radius: 50px;
+
+    color: #86efac;
+    background: rgba(34, 197, 94, 0.08);
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.status-ponto {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+
+    box-shadow: 0 0 10px #22c55e;
+    animation: pulsar-status 1.5s infinite;
+}
+
 
 .nav-bar {
   display: flex;
@@ -397,14 +447,12 @@ main {
 }
 
 .ContainerProjetos {
-  display: flex;
-  flex-wrap: wrap;
-  /* permite que os projetos quebrem para a próxima linha em telas menores */
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  gap: 20px;
-  padding-bottom: 30px;
+    display: grid; /* Organiza os projetos em uma grade */
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Cria 3 colunas com larguras iguais */
+    width: min(92%, 1600px); /* Usa 92% da tela, limitado a 1600px */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    gap: 30px; /* Define 30px de espaço entre os cards */
+    padding-bottom: 40px; /* Adiciona espaço abaixo dos projetos */
 }
 
 .carrosel {
@@ -494,12 +542,13 @@ main {
 
 /* Projetos com imagem de fundo */
 .projeto-card {
-  width: 500px;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #111827;
-  border: 1px solid #26344d;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Faz o card ocupar toda a largura da coluna */
+    min-width: 0; /* Permite que o card diminua sem estourar a grade */
+    border-radius: 12px; /* Arredonda os cantos do card */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar os cantos */
+    background: #111827; /* Define a cor de fundo do card */
+    border: 1px solid #26344d; /* Adiciona uma borda discreta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza animações de movimento e sombra */
 }
 
 .projeto-card:hover {
@@ -511,11 +560,11 @@ main {
 }
 
 .projeto-card-img img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  display: block;/*Faz a imagem se comportar como elemento de block,ocupando sua própria linha, por pdrão é inline,oque deixa pequeno o espaço abaixo dela causado pelo alinhamento com a linha de texto, com o block esse espaço é eliminado*/
-  transition: transform 0.4s ease;
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: clamp(210px, 15vw, 280px); /* Altura responsiva entre 210px e 280px */
+    object-fit: cover; /* Preenche o espaço sem distorcer a imagem */
+    display: block; /* Remove o espaço extra que imagens inline podem gerar */
+    transition: transform 0.4s ease; /* Suaviza o efeito de zoom */
 }
 
 .projeto-card-img:hover img {
@@ -885,206 +934,259 @@ footer {
 }
 
 /* Menu Hamburguer */
+
+/* ========================================
+   TABLETS E TELAS MENORES ATÉ 1100px
+======================================== */
+@media (max-width: 1100px) {
+  .ContainerProjetos {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Exibe os projetos em duas colunas */
+    width: 92%; /* Define a largura do container */
+    gap: 25px; /* Espaçamento entre os cards */
+    margin: 0 auto; /* Centraliza os projetos */
+  }
+
+  .projeto-card {
+    width: 100%; /* Ocupa toda a largura da coluna */
+    min-width: 0; /* Evita que o card ultrapasse os limites da coluna */
+  }
+
+  .projeto-card-img img {
+    height: clamp(200px, 20vw, 250px); /* Ajusta a altura das imagens conforme a tela */
+  }
+}
+
+
+/* ========================================
+   TABLETS E DISPOSITIVOS ATÉ 730px
+======================================== */
 @media screen and (max-width: 730px) {
   .principal h1 {
-    font-size: 45px;
-    align-items: center;
-    justify-content: center;
+    font-size: 45px; /* Reduz o tamanho do título principal */
+    align-items: center; /* Centraliza os itens no eixo transversal, se for flex */
+    justify-content: center; /* Centraliza o conteúdo no eixo principal, se for flex */
   }
+
   .fotoPrincipal img {
-    width: 200px;
-    margin-top: 0;
+    width: 200px; /* Reduz a largura da imagem principal */
+    margin-top: 0; /* Remove a margem superior */
   }
+
   .nav-item {
-    display: none;
+    display: none; /* Esconde os itens do menu de navegação padrão */
   }
+
   .botao-wpp {
-    left: 20px;
+    left: 20px; /* Posiciona o botão do WhatsApp a 20px da esquerda */
   }
+
   .sobremim-content {
-    flex-direction: column;
+    flex-direction: column; /* Organiza o conteúdo Sobre Mim na vertical */
   }
 
   .mobile-menu-icon {
-    display: block;
+    display: block; /* Exibe o ícone do menu mobile */
   }
 
   .mobile-menu-icon button {
-    background-color: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
+    background-color: transparent; /* Remove o fundo do botão */
+    color: white; /* Define a cor do ícone */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Exibe a mãozinha ao passar o mouse */
+    font-size: 1.5rem; /* Define o tamanho do ícone */
   }
 
   .mobile-menu ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 1rem;
+    display: flex; /* Ativa o Flexbox na lista */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    text-align: center; /* Centraliza os textos */
+    padding-bottom: 1rem; /* Adiciona espaço abaixo da lista */
   }
 
   .mobile-menu .nav-item {
-    display: block;
-    padding: 1rem 2rem;
+    display: block; /* Exibe os itens dentro do menu mobile */
+    padding: 1rem 2rem; /* Adiciona espaçamento interno */
   }
 
   .mobile-menu .login-button button {
-    width: 100%;
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
   }
 
   .open {
-    display: block;
+    display: block; /* Exibe o menu quando a classe open estiver ativa */
   }
+
   header {
-    background: #ccc;
+    background: #ccc; /* Define o fundo do cabeçalho */
   }
+
   .mobile-menu-icon button {
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    padding-top: 5px;
+    color: white; /* Mantém o ícone branco */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    font-size: 1.5rem; /* Define o tamanho do ícone */
+    padding-top: 5px; /* Adiciona espaço acima do botão */
+  }
+
+  /* Projetos: uma coluna em telas de até 730px */
+  .ContainerProjetos {
+    grid-template-columns: 1fr; /* Exibe apenas uma coluna */
+    width: 90%; /* Define a largura do container */
+    margin: 0 auto; /* Centraliza os projetos */
+    gap: 25px; /* Define o espaço entre os cards */
+  }
+
+  .projeto-card {
+    width: 100%; /* Faz o card ocupar toda a largura da coluna */
+    min-width: 0; /* Evita que o conteúdo ultrapasse os limites */
   }
 }
 
+
+/* ========================================
+   CELULARES ATÉ 480px
+======================================== */
 @media (max-width: 480px) {
   header .logo {
-    color: brown;
+    color: brown; /* Define a cor da logo no celular */
   }
+
   header {
-    padding: 20px 4%;
-    background: #ccc;
+    padding: 20px 4%; /* Ajusta o espaçamento interno do cabeçalho */
+    background: #ccc; /* Define o fundo do cabeçalho */
   }
-  .curriculo{
-  display: flex;
-  align-items: center;
-  border: 1px solid rgb(138, 138, 138);
-  border-radius: 10px;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-#buttonCurriculo{
-  font-size: 12px;
-  border: none;
-}
+
+  .curriculo {
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Centraliza os itens verticalmente */
+    border: 1px solid rgb(138, 138, 138); /* Adiciona uma borda */
+    border-radius: 10px; /* Arredonda os cantos */
+    margin-top: 0; /* Remove a margem superior */
+    margin-bottom: 30px; /* Adiciona espaço abaixo */
+  }
+
+  #buttonCurriculo {
+    font-size: 12px; /* Reduz o tamanho do texto do botão */
+    border: none; /* Remove a borda */
+  }
+
   .botao-wpp {
-    width: 24px;
-    height: auto;
-    padding: 0;
-    margin-right: 20px;
+    width: 24px; /* Define a largura do botão */
+    height: auto; /* Mantém a proporção da altura */
+    padding: 0; /* Remove o espaçamento interno */
+    margin-right: 20px; /* Adiciona margem à direita */
   }
 
   .botao-wpp img {
-    width: 24px;
-    height: 24px;
+    width: 24px; /* Define a largura da imagem */
+    height: 24px; /* Define a altura da imagem */
   }
+
   .btnSubir {
-    right: 10px;
+    right: 10px; /* Posiciona o botão subir a 10px da direita */
   }
 
   .mobile-menu-icon button {
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    padding-top: 5px;
+    color: white; /* Define a cor do ícone */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Exibe a mãozinha ao passar o mouse */
+    font-size: 1.5rem; /* Define o tamanho do ícone */
+    padding-top: 5px; /* Adiciona espaço acima */
   }
+
   .principal h1 {
-    font-size: 35px;
-    align-items: center;
-    justify-content: center;
+    font-size: 35px; /* Reduz o título para telas pequenas */
+    align-items: center; /* Centraliza os itens, se for flex */
+    justify-content: center; /* Centraliza o conteúdo, se for flex */
   }
+
   .logo h1 {
-    font-size: 24px;
-    padding-right: 1.5rem;
+    font-size: 24px; /* Reduz o tamanho do texto da logo */
+    padding-right: 1.5rem; /* Adiciona espaço à direita */
   }
+
   .principal > .container {
-    flex-direction: column;
-    padding-top: 80px;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    padding-top: 40px; /* Adiciona espaço acima do conteúdo */
 
     h2 {
-      font-size: 18px;
+      font-size: 18px; /* Reduz o tamanho do subtítulo */
     }
 
     img {
-      width: 200px;
-      margin-bottom: 50px;
+      width: 200px; /* Reduz a largura da imagem */
+      margin-bottom: 50px; /* Adiciona espaço abaixo da imagem */
     }
   }
+
   .skills-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Organiza as habilidades verticalmente */
+    align-items: center; /* Centraliza as habilidades */
   }
 
   .informPessoais p {
-    font-size: 12px;
-    color: #aaaaaa;
+    font-size: 12px; /* Reduz o tamanho dos textos pessoais */
+    color: #aaaaaa; /* Define a cor do texto */
   }
 
   .SobreMim {
-    padding-top: 5px;
+    padding-top: 5px; /* Adiciona um pequeno espaço acima */
   }
 
   .sobremim-div1 {
     p {
-      font-size: 14px;
-      margin-top: -15px;
+      font-size: 14px; /* Reduz o tamanho do parágrafo */
+      margin-top: -15px; /* Aproxima o parágrafo do elemento anterior */
     }
   }
 
   .video {
     p {
-      font-size: 14px;
+      font-size: 14px; /* Reduz o tamanho do texto do vídeo */
     }
   }
 
   .sobremim-content {
-    flex-direction: column;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
   }
 
   .paragrafo h3 {
-    font-size: 16px;
+    font-size: 16px; /* Reduz o tamanho do título */
   }
 
   .sugestao {
-    width: 100vw;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
-
+    width: 100vw; /* Faz a seção ocupar toda a largura da tela */
+    padding: 20px; /* Adiciona espaçamento interno */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Centraliza os textos */
   }
 
   .sugestao-cliente button {
-    width: 100%;
-    background-color: #0099cc;
-    color: white;
-    
+    width: 100%; /* Faz o botão ocupar toda a largura */
+    background-color: #0099cc; /* Define o fundo azul */
+    color: white; /* Define o texto branco */
   }
-
 
   .dicas {
-    width: 100%;
+    width: 100%; /* Ocupa toda a largura disponível */
   }
-  .ContainerProjetos {
-    flex-direction: column;
-    align-items: center;
+
+  .projeto-card-img img {
+    height: 220px; /* Define a altura das imagens no celular */
   }
-  .projeto-card {
-    width: 90%;
-  }
+
   .redes {
-    gap: 20px;
+    gap: 20px; /* Define o espaço entre os ícones das redes */
   }
 
   .container.sobremim-container {
     h2 {
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 10px;
+      padding: 0; /* Remove o espaçamento interno */
+      display: flex; /* Ativa o Flexbox */
+      justify-content: center; /* Centraliza horizontalmente */
+      align-items: center; /* Centraliza verticalmente */
+      padding-top: 10px; /* Adiciona espaço acima */
     }
   }
 }
