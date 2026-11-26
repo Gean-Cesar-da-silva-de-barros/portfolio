@@ -29,9 +29,9 @@ setInterval(() => {
   // Depois de meio segundo, troca o texto e reaparece
   setTimeout(() => {
     titulo.textContent =
-      titulo.textContent === "Desenvolvedor Web"
+      titulo.textContent === "Desenvolvedor full Stack Júnior"
         ? "Analista de Sistemas" //Se sim → troca para "Engenheiro de Software".
-        : "Desenvolvedor Web"; //Se não → troca para "Desenvolvedor Web".
+        : "Desenvolvedor full Stack Júnior"; //Se não → troca para "Desenvolvedor Web".
     titulo.style.opacity = 1;
   }, 500); // tempo igual ao transition do CSS
 }, 3000);
