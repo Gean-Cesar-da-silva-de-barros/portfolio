@@ -184,7 +184,12 @@ header.rolagem {
   font-weight: 400;
   display: inline-block;
   position: relative;
+  transition: transform 0.3s ease;
 }
+.nav-link:hover{
+   transform: scale(1.04);
+}
+
 
 .nav-link::after {
   content: "";
