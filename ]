@@ -1,0 +1,207 @@
+[33mcommit 2c836c31e0cdb0479e91676557a5c61809d514b1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Thu Nov 26 00:24:34 2026 -0300
+
+    Update index.html
+
+[33mcommit 958218e6601537998b3f9475753044cd8c11a634[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Sat Sep 19 07:52:25 2026 -0300
+
+    Atualização icon curriculo
+
+[33mcommit 6a06de4953ce3bf1934db59a5434c6f6a5d976b5[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Thu Sep 17 01:25:25 2026 -0300
+
+    Colocado bracground da esquerda para direita no button curriculo
+
+[33mcommit fc773b6f1b2c8b4049052d84dd3166113660f87e[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Wed Sep 16 23:09:29 2026 -0300
+
+    Atualizado curriculo e pequenos ajustes
+
+[33mcommit beb39da45e561e29e77653f0f2672eb3f46273e4[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Tue Sep 15 12:42:36 2026 -0300
+
+    Atualiza portfólio
+
+[33mcommit 2d46300018cb2f3caf810c11608d4bc32e83bc22[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Tue Sep 15 12:34:57 2026 -0300
+
+    add imagens novas minhas e novo button de curriculum
+
+[33mcommit e4ba4dfa3b1d773fcbd15a7668d32cd57af3ebb3[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Tue Mar 17 12:58:43 2026 -0300
+
+    correcao img lottie css
+
+[33mcommit 2a7103a61fd95d65a5bd953b169c7bf7df1a3e2a[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Tue Mar 17 12:39:00 2026 -0300
+
+    feito correcao css mobile
+
+[33mcommit eabb31c96a596141871e2d929819dde6ce8e4f68[m
+Merge: 4e1c898 bed9e02
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Sun Mar 15 22:24:45 2026 -0300
+
+    scroll cor
+
+[33mcommit 4e1c898e63c300fbfdf50c69dc9529afa63d247d[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Sun Mar 15 22:22:33 2026 -0300
+
+    adicionado scrol mouse
+
+[33mcommit 256e6807b58c926868a366b9bddc434f40f9aed1[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Sun Mar 15 22:03:38 2026 -0300
+
+    novo efeito e imagem principal funcionando
+
+[33mcommit bed9e02784f0ba2f54c3a0a5c95f3d502e90aec0[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Sun Mar 15 21:58:30 2026 -0300
+
+    Fix broken link syntax in README.md
+
+[33mcommit f120fbbe89a2b02e4d2b337bb280c6b84051728e[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Sun Mar 15 21:57:59 2026 -0300
+
+    Fix portfolio link format in README
+
+[33mcommit 0852eede503f6089c5616700c75505d96151ab57[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Sun Mar 15 21:53:32 2026 -0300
+
+    adicionado script para troca de imagem ao clicar
+
+[33mcommit 4b6e50d62fea8d101ffca195bf37d7e556a68089[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Sun Mar 15 19:28:09 2026 -0300
+
+    correcao style.css
+
+[33mcommit 8f055a78b3317c5e02552a8ebdc170d70b2c7588[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Sun Mar 15 19:26:51 2026 -0300
+
+    correcao no media queries mobile e tablet
+
+[33mcommit b7259339e6b00e03a208c9735b276481ebe87f28[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Fri Mar 13 20:06:22 2026 -0300
+
+    Adicionado function js para mudar efeito para o header ficar mais escuro e com borda quando rolar a página e atualizado alguns erros de ids
+
+[33mcommit 9e54cdba125a7caa92b081a024eedbdc87f392a0[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Thu Mar 12 20:07:47 2026 -0300
+
+    adicionado e testado lottieFiles imagens com movimento
+
+[33mcommit b04ccc8ced0ee986d97aecad831d95e9fb45b4da[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Wed Mar 11 20:11:47 2026 -0300
+
+    adicionado novos efeitos data aos e algumas correcoes no codigo
+
+[33mcommit 5b538629eb7f5c60a91253f997e22ed59b4b546b[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Wed Mar 11 20:11:13 2026 -0300
+
+    adicionado function flipar js
+
+[33mcommit 7f43bb868b85610498982301d1039ece21cf05f0[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Tue Mar 10 19:26:48 2026 -0300
+
+    foi ajustado espacamento projetos no mobile
+
+[33mcommit 6b0ff75b2ea53519b88699390023c4e4f061bc12[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Tue Mar 10 19:07:23 2026 -0300
+
+    feito atualizacao de dados e projetos e correcoes em cores e css
+
+[33mcommit 5783bbd0a8c26a852c1cdf762b2e0017edbcff20[m
+Merge: b399235 c934f2c
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Wed Mar 4 20:10:25 2026 -0300
+
+    add readme
+
+[33mcommit b3992350e9c0076dc5ea4cc5df95124319f08fc8[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Wed Mar 4 20:09:03 2026 -0300
+
+    atualizacao projeto jonatha freelancer mecanica
+
+[33mcommit c934f2c822188fe908a5226d6fa20a4d3161ddd4[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Wed Mar 4 20:06:11 2026 -0300
+
+    Update demo link in index.html
+
+[33mcommit 3b088f2cd8e02de730972f1f94e7699365dc6280[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Wed Mar 4 19:56:22 2026 -0300
+
+    Create README for portfolio project
+    
+    Added a README file for the professional portfolio project, detailing the technologies used and professional objectives.
+
+[33mcommit ec68c1fa214e7b972bb7fdfbc063090b998489c7[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Wed Mar 4 19:21:56 2026 -0300
+
+    atualizado descricao Sobremim
+
+[33mcommit d614a96e5108b896389fcee3e15cd218d83f79d1[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Sun Feb 22 00:17:49 2026 -0300
+
+    pequena correcao no css
+
+[33mcommit e098a0681740e40c1ade63995e919b98486159e6[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Fri Feb 20 19:57:07 2026 -0300
+
+    removido grid e adicionado slider sem js nas habilidades e feito correcao em cores
+
+[33mcommit c31f1d2a801466a39b5d02b44bca74ea6b81be26[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Thu Feb 19 20:09:06 2026 -0300
+
+    Adicionado novas cores e correçoes span
+
+[33mcommit 148b1262633cd057ea171d566db4c30a8f41d84a[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Thu Feb 19 17:33:25 2026 -0300
+
+    add function e removido margin containerprojetos
+
+[33mcommit b1fe3934a4a3db0881256c81a18769469376380c[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Thu Feb 19 02:24:16 2026 -0300
+
+    Pequenas correções de corres
+
+[33mcommit efb12792b83ab4f92c7d0c0209d49a3ad84cbb27[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Mon Feb 16 17:38:20 2026 -0300
+
+    Adicionado btnSubir
+
+[33mcommit 724561de3847ad2303eb2f3bcef0fa1d110674aa[m
+Author: Gean_Dev <gean021216@gmail.com>
+Date:   Sat Feb 14 19:14:49 2026 -0300
+
+    chore: portfolio inicial
