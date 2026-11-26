@@ -141,6 +141,11 @@ header.rolagem {
     border: none; /* Remove a borda padrão */
     background: transparent; /* Deixa o fundo transparente */
 }
+.buttons{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 #myname {
   transition: 0.5s;
@@ -264,6 +269,8 @@ header.rolagem {
 
 .principal {
   border-bottom: 1px solid #ccc;
+  
+
 }
 
 .principal h1 {
@@ -302,7 +309,9 @@ header.rolagem {
   color: #7a7a7a;
   font-weight: bold;
 }
-
+#h2{
+  color: #fffefe;
+}
 .sobremim-container {
   display: flex;
   flex-direction: column;
@@ -368,6 +377,7 @@ main {
   color: #b9b9b9;
   padding-top: 80px;
   border-bottom: 1px solid #ccc;
+      background-color: #00051d;
 }
 
 .Projetos h2 {
@@ -440,6 +450,12 @@ main {
 }
 
 /* Botão */
+.projeto-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 .botao {
   padding: 5px;
   border: none;
@@ -472,19 +488,16 @@ main {
 
 /* Projetos com imagem de fundo */
 .projeto-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+ 
   align-items: center;
   color: rgb(0, 0, 0);
-  width: 380px;
+  width: 500px;
   height: auto;
-  padding: 10px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
 }
 .projeto-card:hover {
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 .projeto-card-img {
   overflow: hidden;
@@ -493,19 +506,24 @@ main {
 
 .projeto-card-img img {
   width: 100%;
-  height: 180px;
+  height: 250px;
   object-fit: cover;
+  display: block;/*Faz a imagem se comportar como elemento de block,ocupando sua própria linha, por pdrão é inline,oque deixa pequeno o espaço abaixo dela causado pelo alinhamento com a linha de texto, com o block esse espaço é eliminado*/
   transition: transform 0.4s ease;
 }
 
-.projeto-card:hover .projeto-card-img img {
+.projeto-card-img:hover img {
   transform: scale(1.08);
 }
 
 .projeto-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-
-  border-radius: 5px;
+  padding: 10px;
+  padding-top: 0;
+  background: transparent;
 
   p {
     color: #646464;
@@ -536,6 +554,7 @@ main {
   color: rgb(0, 0, 0);
   text-align: center;
   width: 100%;
+  background-color: #00051d;
 }
 
 .redes {
@@ -545,6 +564,7 @@ main {
   padding: 10px 20px;
   align-items: center;
   transition: 0.2s;
+  
 }
 
 .github:hover {
@@ -569,7 +589,7 @@ main {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #CCCCCC;
   padding: 20px;
   gap: 20px;
 }
@@ -601,6 +621,7 @@ main {
   padding: 10px;
 }
 
+
 .paragrafo h3 {
   color: #000000;
   padding: 20px;
@@ -629,9 +650,10 @@ main {
 
 footer {
   background: transparent;
-  color: #000000;
+  color: #fafafa;
   text-align: center;
   padding: 30px;
+      background-color: #00051d;
 }
 
 @keyframes pulseWpp {
@@ -701,15 +723,18 @@ footer {
 .dark-mode {
   background-color: #00051d;
   color: #ffffff;
-
   .principal p {
     color: #d3d3d3;
   }
   #buttonCurriculo{
   color: #fffdfd;
   
-  
-}
+  }
+  #h2{
+    color: #CCCCCC;
+
+
+  }
 
   /* abaixo são do header*/
   header {
@@ -767,10 +792,16 @@ footer {
 
   .projeto-card {
     background-color: #303030;
+  
+   
+    
   }
 
   .projeto-card:hover {
     box-shadow: 0px 4px 12px rgba(1, 219, 235, 0.432);
+  }
+  .projeto-info{
+    background: transparent;
   }
 
   .projeto-info h3 {
