@@ -115,10 +115,10 @@ function trocarImagemGitHub() {
 let fotoPrincipalImg = document.querySelector(".fotoPrincipal img");
 let mudarImg = document.querySelector(".mudar-img"); //pega o botão de mudança de imagem
 mudarImg.addEventListener("click", () => {
-  if (fotoPrincipalImg.src.includes("fotoPrincipalBlack.jpg")) {
+  if (fotoPrincipalImg.src.includes("eublack2.jpg")) {
     fotoPrincipalImg.src = "./imagens/eucs1.jpg";
   } else {
-    fotoPrincipalImg.src = "./imagens/fotoPrincipalBlack.jpg";
+    fotoPrincipalImg.src = "./imagens/eublack2.jpg";
   }
 });
 function fliparProjeto(id) {

@@ -406,6 +406,9 @@ main {
   gap: 20px;
   padding-bottom: 30px;
 }
+#imginstagram:hover{
+  background: #A91BF5;
+}
 
 .carrosel {
   margin: 100px auto;
@@ -463,8 +466,9 @@ main {
 }
 .botao {
   padding: 5px;
-  border: none;
+  border: 1px solid #00bbff;
   border-radius: 10px;
+  border-color: #0099cc;
   background-color: #00051d;
   color: rgb(138, 138, 138);
   font-weight: bold;
@@ -502,7 +506,7 @@ main {
   border-radius: 10px;
 }
 .projeto-card:hover {
-   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+   box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.342);
 }
 .projeto-card-img {
   overflow: hidden;
@@ -528,7 +532,7 @@ main {
   text-align: center;
   padding: 10px;
   padding-top: 0;
-  background: transparent;
+  background-color: #CCCCCC;
 
   p {
     color: #646464;
@@ -704,14 +708,17 @@ footer {
 }
 
 .tecnologias span {
-  background: #e5e5e5;
+  background: #181818;
+  color: #0099cc;
   padding: 4px 8px;
   border-radius: 6px;
+  border: 1px solid red;
+  border-color: #0099cc;
   font-size: 12px;
   font-weight: 600;
 }
 .tecnologias span:hover {
-  background: #00bbff63;
+  background: #b8b8b836;
   transition: 0.3s;
 }
 .botao-breve {
@@ -806,7 +813,7 @@ footer {
     box-shadow: 0px 4px 12px rgba(1, 219, 235, 0.432);
   }
   .projeto-info{
-    background: transparent;
+    background-color: #000000;
   }
 
   .projeto-info h3 {
