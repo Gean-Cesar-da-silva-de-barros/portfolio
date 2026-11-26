@@ -152,3 +152,5 @@ window.addEventListener("scroll", function () {
     myname.textContent = "Portfólio"; //troca o texto do myname para "Portfólio"
   }
 });
+
+
