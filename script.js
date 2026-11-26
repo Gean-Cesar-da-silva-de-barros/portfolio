@@ -1,16 +1,17 @@
-
 const buttonCurriculo = document.getElementById("buttonCurriculo");
-buttonCurriculo.addEventListener('click', function () {
-  const link = document.createElement('a');
-  link.href = './curriculo.pdf';
-  link.download = 'portfolio/Gean-Cesar-Curriculo.pdf'
+buttonCurriculo.addEventListener("click", function () {
+  //registrar click no google analytics
+  gtag("event", "download_curriculo", {
+    //gtag function do google //donwload_curriculo nome que aparecera nos relatorios
+    event_category: "curriculo", //event informa que estou enviando um envento
+    event_label: "Gean-Cesar-Curriculo.pdf",
+  });
+  //link temporario pra baixar curriculum
+  const link = document.createElement("a");
+  link.href = "./curriculo.pdf";
+  link.download = "portfolio/Gean-Cesar-Curriculo.pdf";
   link.click();
-
-})
-
-
-
-
+});
 
 var typed = new Typed("#Meta", {
   strings: ["Criando soluções web que unem inovação, design e performance."], // texto
