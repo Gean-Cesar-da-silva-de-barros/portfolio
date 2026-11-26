@@ -249,8 +249,8 @@ header.rolagem {
   margin-top: 20px;
   border-radius: 50%;
   max-width: 300px;
-  box-shadow: 0 0 20px rgba(3, 155, 160, 0.3);
-  border: 1px solid #868686;
+  box-shadow: 0 0 20px rgba(3, 32, 160, 0.3);
+  border: 1px solid #0A0F26;
   display: block;
   animation: efeitFot 5s ease-in-out infinite;
   cursor: pointer;
